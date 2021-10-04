@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To determine the location of station occupied by the Plane Table with the help of three control points for detailed plotting.
