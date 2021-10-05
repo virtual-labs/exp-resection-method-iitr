@@ -1,0 +1,521 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+#header {
+    border-bottom: 8px solid #ff6600;
+    font-family: 'Raleway', sans-serif;
+    width: 1890px;
+    top: 0;
+    min-width: 500px;
+    background-color: #fff!important;
+}
+
+#header img {
+    padding: 8px 8px 4px 32px;
+}
+
+h2 {
+    font-size: large;
+}
+#steps{
+    margin-top: 20px;
+    font-size: 30px;
+}
+ol{
+    margin-left: 50px;
+    font-size: 20px;
+
+}
+
+#labName {
+    float: right;
+    font-size: 25px;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 40px;
+    color: #2C99CE;
+}
+
+#exp-name {
+    width: 1890px;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    color: #2C99CE;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #333;
+} 
+#main{
+
+    margin-top: 50px;
+    margin-left: 300px;
+    height: 700px;
+    width: 1000px;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#main_ob_plot{
+
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 720px;
+    width: 1350px;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-image: url("../images/capture.jpg");
+}
+#ar1{
+    margin-left: 450px;
+    margin-top: 220px;
+    height:50px;
+    width:30px;
+    float: left;
+    position: absolute;
+}
+#ar2{margin-left: 605px;
+    margin-top: 245px;
+    height:50px;
+    width:30px;
+    float: left;
+    position: absolute;}
+#ar3{margin-left: 1180px;
+    margin-top: 10px;
+    height:50px;
+    width:30px;
+    float: left;
+    position: absolute;
+}
+#tree{
+height:170px;
+width:230px;
+    margin-top: 260px;
+    margin-left: 350px;
+    float:left;
+    cursor: pointer;
+    position:absolute;
+    
+}
+#tree-obj{
+    position: absolute;
+    left: 25%;
+    top:20%;
+    color: black;
+    font-size: medium;
+    background-color: blanchedalmond;
+    white-space: nowrap;
+    border:2px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5 s ease;
+
+}
+#tree-obj::before{
+    content: "";
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translateX(-50%);
+    border:15px solid;
+    border-color: blanchedalmond #0000 #0000 #0000;
+}
+#tree_div:hover #tree-obj{
+    
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+#lamp{
+
+    margin-top: 290px;
+    margin-left: 570px;
+    float:left;
+    cursor: pointer;
+    position:absolute;
+}
+#lamp-obj{
+    position: absolute;
+    left: 33%;
+    top:25%;
+    color: black;
+    font-size: medium;
+    background-color: blanchedalmond;
+    white-space: nowrap;
+    border:2px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5 s ease;
+
+}
+#lamp-obj::before{
+    content: "";
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translateX(-50%);
+    border:15px solid;
+    border-color: blanchedalmond #0000 #0000 #0000;
+}
+#lamp_div:hover #lamp-obj{
+    
+    visibility: visible;
+    opacity: 0.9;
+    position: absolute;
+}
+#tower{
+    height: 380px;
+    width:290px;
+    margin-top: 62px;
+    margin-left: 1060px;
+    float:left;
+    cursor: pointer;
+    position:absolute;
+}
+#tower-obj{
+    position: absolute;
+    left: 57%;
+    top:5%;
+    color: black;
+    font-size: medium;
+    background-color: blanchedalmond;
+    white-space: nowrap;
+    border:2px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5 s ease;
+
+}
+#tower-obj::before{
+    content: "";
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translateX(-50%);
+    border:15px solid;
+    border-color: blanchedalmond #0000 #0000 #0000;
+}
+#tower_div:hover #tower-obj{
+    
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+#home:hover{
+    color:white;
+    background-color:#3895D3;
+}
+#sheet
+{
+    margin-top: 380px;
+    margin-left: 650px;
+    margin-bottom: 0px;
+    float: left;
+    height: 100px;
+    width:170px;
+    background-color:#DEDEDE;
+    transform: perspective(900px)scaleZ(2)rotateX(70deg);
+    opacity:0.9;
+    border: 1px 1px 5px 5px solid ;
+    border-color: #B7410E ;
+    position:absolute;
+
+}
+#tripodimg
+{
+    margin-top: 450px;
+    float: left;
+    height: 135px;
+    width: 170px;
+    position:absolute;
+    margin-left: 650px;
+    
+}
+#alidade_img{
+    height: 200px;
+    width:320px;
+    margin-top: 370px;
+    float:left;
+    position: absolute;
+}
+#stand_img{
+    height:90px;
+    width:325px;
+    float:left;
+    margin-top: 560px;
+position: absolute;
+}
+#c{
+    background-color: #E3C565;
+    height: 25px;
+    width: 25px;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 475px;
+    margin-left: 720px;
+    position: absolute;
+    display: none;
+}
+#arrowimg{
+    height: 40px;
+    width: 90px;
+    margin-top: 430px;
+    margin-left: 820px;
+    position: absolute;
+    display: none;
+}
+#drawobjimg{
+
+margin-left: 140px;
+margin-top: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+#refdotblue{
+    height:10px;
+    width: 5px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 70px;
+    display: none;
+}
+#refdota{
+    height:10px;
+    width: 10px;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+#refdotb{
+    height:10px;
+    width: 10px;
+    margin-left: 125px;
+     margin-top: 25px;
+   
+    position: absolute;
+    z-index: 1;
+}
+#refdotc{
+    height:10px;
+    width: 10px;
+    z-index: 1;
+   
+    position: absolute;
+    margin-left: 70px;
+     margin-top: 70px;
+}
+#a{
+    height: 30px;
+    width: 10px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+#b{
+    height: 30px;
+    width: 10px;
+    position: absolute;
+    margin-left: 125px;
+     margin-top: 35px;
+}
+#dc{
+    height: 30px;
+    width: 10px;
+    position: absolute;
+    margin-left: 70px;
+     margin-top: 75px;
+}
+#lineobj1img{
+    height:120px;
+    width: 110px;
+    position: absolute;
+     display:none;
+   
+}
+#lineobj4img{
+    height:100px;
+    width: 105px;
+    position: absolute;
+     display:none;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#lineobj2img{
+    height:120px;
+    width:100px;
+    position: absolute;
+    margin-left: 30px;
+    display:none;
+    
+}
+#lineobj5img{
+    height:120px;
+    width:100px;
+    position: absolute;
+    margin-left: 25px;
+    display:none;
+   
+    
+}
+#lineobj3img{
+    height:80px;
+    width:150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 5px;
+    display:none;
+   
+}
+#lineobj6img{
+    height:80px;
+    width:200px;
+    position: absolute;
+
+    margin-top: 5px;
+    display:none;
+   
+}
+#result{
+
+    height:70px;
+    width:150px;
+    margin-left: 1100px;
+    margin-top: 600px;
+    display: none;
+}
+#reset{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 640px;
+    float: left;
+    height: 50px;
+    width: 110px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#home{
+    position: absolute;
+    margin-top: 640px;
+    margin-left: 180px;
+    float: left;
+    height: 50px;
+    width: 110px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+#symbol{
+    float: left;
+    margin-top: 500px;
+    margin-left: 1100px;
+    position: absolute;
+
+}
+#graph{
+    float: left;
+    height: 700px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 300px;
+    position: absolute;
+    }
+    #h{
+        float: left;
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color:green;
+        color: whitesmoke;
+        margin-top: 400px;
+        margin-left: 1150px;
+        position: absolute;
+        
+    }
+    #h:hover{
+        color:white;
+        background-color:#3895D3;
+    }
+    #back_info{
+        margin-left: 350px;
+        margin-top: 120px;
+        height: 70px;
+        width: 300px;
+        font-size: large;
+        color:white;
+        background-color: #23B2EE;
+        font-weight: bolder;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        
+        #back_info:hover{
+            color:black;;
+            background-color: #009dff;
+        }
+        #pta{
+            margin-left: 350px;
+            margin-top: 100px;
+            height: 70px;
+            width: 300px;
+            font-size: large; 
+            color:white;
+            background-color: #23B2EE;
+            font-weight: bold;
+            border: 3px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #pta:hover{
+            color:black;;
+            background-color: #009dff;
+        }
+        
+        #plot{
+            margin-left: 350px;
+            margin-top: 100px;
+            height: 70px;
+            width: 300px;
+            font-size: large; 
+            color:white;
+            background-color: #23B2EE;
+            font-weight: bold;
+            border: 3px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #plot:hover{
+            color:black;;
+            background-color: #009dff;
+        }
+        #main{
+
+            margin-top: 50px;
+            margin-left: 300px;
+            height: 700px;
+            width: 1000px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+        }

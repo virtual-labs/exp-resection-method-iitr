@@ -1,39 +1,4 @@
 {
   "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+  "questions":[{"question":"Accurate centering in plane table survey is necessary for:","answers":{"a":"large scale maps","b":"small scale maps","c":"filling in details","d":"to solve triangle of error rapidly"},"correctAnswer":"a"},{"question":"The three point problem fails when station lies on","answers":{"a":"great circle","b":"great triangle","c":"centre of great circle","d":"orthocenter of great triangle"},"correctAnswer":"a"},{"question":"It is necessary to go to one of the plotted stations in the method of resection by:","answers":{"a":"a back ray","b":"trough compass","c":"three point problem","d":"two point problem"},"correctAnswer":"c"},{"question":"Lehmann's rule states that while looking towards the station, the plane table location to be fixed is always to the","answers":{"a":"left or right of each of the rays","b":"left of each of the rays","c":"right to the each of the rays","d":"left or right of the ray to the most distant station"},"correctAnswer":"a"},{"question":"Which type of plane table have a proper leveling head of 3 foot screws for accurate leveling of table?","answers":{"a":"Simple plane table","b":"Johnson plane table","c":"Coast survey table","d":"None of the above"},"correctAnswer":"c"}]
 }
