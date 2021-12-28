@@ -1,56 +1,75 @@
 <html>
 <head>
-<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body >
 
     <div id="main_ob_plot">
+    <button id="ins"  >INSTRUCTIONS
+ </button>
+   <span id="ins_span"><b>1.</b> Click on the main file and wait until home screen appears.<br><br>
+<b>2.</b> There are three buttons in this experiment i.e. BACKGROUND INFORMATION Button, PLANE TABLE ACCESSORIES Button, OBSERVATION & PLOTTING Button.<br><br>
+<b>3.</b> BACKGROUND INFORMATION Button: This button is used to give all the background information regarding the experiment.<br><br>
+<b>4.</b> PLANE TABLE ACCESSORIES Button: This button is used to give all the accessories used in the experiment.<br><br>
+<b>5.</b> OBSERVATION & PLOTTING Button: It contains two buttons i.e. BROWSER & FLASH BASED SIMULATIONS Button.<br><br>
+<b>6.</b> On click on BROWSER BASED Button: it will navigate to the simluation page.<br><br>
+<b>7.</b> There are 3 objects(tree, street lamp and big electric pole) pointed by arrows and a Plane Table located inside all of the 3 objects. Three points are already plotted on the Plane Table using either Radiation methd or Intersection method.<br><br>
+<b>8.</b> On the left side of the pane, alidade view of objects is also given to see the clear view of the objects.<br>
+<b>9.</b> Click on a object(tree) to get alidade view of object and a line is drawn.<br><br>
+<b>10.</b> Accordingly, click on the other two objects, we get a triangle of error.<br><br>
+<b>11.</b> Now click on “C” labeled on tripod to get center point of triangle.<br><br>
+<b>12.</b>Then click on tree object to draw a line (colored blue) joining center point and already plotted point on Plane Table.<br><br>
+<b>13.</b> Now, click on the red curved arrow to rotate the Plane table. Then,click on the other two objects.<br><br>
+<b>14.</b> Repeat steps 12 & 13 to draw a line (red). <br><br>
+<b>15.</b> Ultimately, you will get a single point on plane table rather than a triangle of error. This will be the location of station occupied by the Plane table.<br><br>
+<b>16.</b> After taking all the observations click on the Result Button.<br>
+<br></span>
+        <img id="tree" src="images\tr.jpg" onclick="tree()" class="scale">
+            <p id="tree_h">Object 1 (Tree)</p>
+        <img id="lamp" src="images\lamp.PNG" onclick="lamp()" class="scale">
+            <p id="lamp_h">Object 2 (Lamp)</p>
+        <img id="tower" src="images\tower.png" onclick="tower()"  class="scale">
+            <p id="tower_h">Object 3 (Tower)</p>
     <div>
     <div>
     <img id="ar1" src="images\ar1.gif">
     <img id="ar2" src="images\ar2.gif">
     <img id="ar3" src="images\ar3.gif">
     </div>
-    <div id="tree_div"><span id="tree-obj">Object 1 (Tree)</span>
-    <span><img id="tree" src="images\tr.jpg" onclick="tree()" class="scale"></span></div>
-    <div id="lamp_div"><span id="lamp-obj">Object 2 (Lamp)</span>
-    <span><img id="lamp" src="images\lamp.PNG" onclick="lamp()" class="scale"></span></div>
-    <div id="tower_div"><span id="tower-obj">Object 3 (Tower)</span>
-    <span><img id="tower" src="images\tower.png" onclick="tower()"  class="scale"></span></div>
-   </div>
-    
-    
+    </div>
+       <img id="reset" src="images\reset.png" alt="reset" onclick="reset()"></a>
+<a href="index.html"><img id="home" src="images\home.png" alt="home"></a>
 <div id="sheet">
-
-<img id="lineobj4img" src="images\l_blue1.png" alt="lineb1">
-<img id="lineobj5img" src="images\l_blue2.png" alt="lineb2">
-<img id="lineobj6img" src="images\l_blue3.png" alt="lineb3">
 
 <img id="refdota" src="images\refdota.png" class="ref" alt="refa">
 <img id="a" src="images\a.png" class="a" alt="a">
 <img id="refdotblue" src="images\refdotblue.png" class="refdotblue" alt="refdotblue">
+<img id="refdotred" src="images\refdotred.png" class="refdotred" alt="refdotred">
 <img id="refdotb" src="images\refdotb.png" class="ref" alt="refb">
-<img id="b" src="images\b.ico" class="b" alt="b">
+<img id="b" src="images\b_point.png" class="b" alt="b">
 <img id="dc" src="images\c.png" class="c" alt="c">
 <img id="refdotc" src="images\refdotc.png" class="ref" alt="refc">
-<img id="lineobj1img" src="images\l1.png" alt="linea1">
-<img id="lineobj2img" src="images\l2.jpg" alt="linea2">
-<img id="lineobj3img" src="images\l3.jpg" alt="linea3">
-<img id="drawobjimg" src="images\drawobj.png" class="draw" alt="draw">
+<img id="blackline1" src="images\blackline1.png" style="height:195px;margin-left:5px;position:absolute;display:none;">
+<img id="blackline2" src="images\22222.png" style="position:absolute;margin-left:25px;height:40px;width:85px;display:none;">
+<img id="blackline3" src="images\l3_black.png" style="margin-left:0px;height:100px;width:130px;position:absolute;display:none;">
+<img id="blueline1" src="images\image.png" style="height:62px;margin-left:29px;position:absolute;display:none;">
+<img id="blueline2" src="images\blueline2.png" style="position:absolute;margin-left:25px;height:40px;width:85px;display:none;">
+<img id="blueline3" src="images\blueline3.png" style="margin-left:1px;height:100px;width:125px;position:absolute;display:none;">
+<img id="redline1" src="images\redline1.png" style="height:60px;margin-left:32px;position:absolute;display:none;">
+<img id="redline2" src="images\redline2.png" style="position:absolute;margin-left:25px;height:40px;width:100px;display:none;">
+<img id="redline3" src="images\redline3.png" style="margin-left:0px;height:100px;width:122px;position:absolute;display:none;">
+<img id="drawobjimg" src="images\drawobj.png" class="draw" alt="draw" >
 
 </div>
-
 <div id="adilade_view"><img id="alidade_img" src="images\alidade.PNG"></div>
 <img id="stand_img" src="images\stand.png">
 <img id="tripodimg" src="images\tri.png" alt="tri">
-<img id="arrowimg" src="images\arw.png" alt="arw" onclick="rotate()">
-<button id="c" onclick="show()" >C</button>
-<a href="graph.html"><img id="result" src="images\result.png" alt="result"></a>
-<br>
-<img id="reset" src="images\reset.png" alt="reset" onclick="reset()"></a>
-<a href="index.html"><img id="home" src="images\home.png" alt="home"></a>
+<img id="arrowimg" src="images\arrow.png" alt="arw"  onclick="rotate()">
+<button id="c" onclick="show()">C</button>
+<img id="result" src="images\result.png" alt="result" onclick="result()">
+
 
     </div>
 <script src="js/main.js"></script>
