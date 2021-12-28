@@ -65,7 +65,7 @@ ol{
     background-color: blanchedalmond;
     border: 3px solid black;
     border-radius: 10px;
-    background-image: url("../images/capture.jpg");
+    background-image: url("../images/Capture.jpg");
 }
 #Inside{
     margin-left: 350px;
@@ -621,7 +621,7 @@ ol{
             background-color: blanchedalmond;
             border: 3px solid black;
             border-radius: 10px;
-            background-image: url("../images/resection_2.png");
+            background-image: url("../images/resection_2.PNG");
         }
         #tree1{
                 margin-top:230px;
