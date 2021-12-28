@@ -1,13 +1,23 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div id="main">
+    <a href="back_info.html"><button id="back_info" >BACKGROUND INFORMATION</button></a><br>
+     <a href="pta.html"><button id="pta">PLANE TABLE ACCESSORIES</button></a><br>
+    <button id="plot" onclick="in_out()">OBSERVATION & PLOTTING<img id="downarrow" src="images\downarrow.png">
+   <div>
+   <a href="simu.html"><button id="in" >BROWSER BASED SIMULATION</button></a>
+   <a href="https://github.com/Virtual-Labs/surveying-lab-iitr/blob/master/src/lab/exp8/resection_exe.rar?raw=true"><button id="out" >FLASH BASED <br>SIMULATION</button></a>
+   </div> 
+   </button>
+        </div>
+<script src="js/main.js"></script>
 </body>
 </html>
