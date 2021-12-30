@@ -1,1 +1,1 @@
-## Detail Plotting by Resection method.
+## Detail plotting by resection method.

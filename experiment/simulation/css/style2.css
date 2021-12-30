@@ -108,7 +108,7 @@ ol{
       height: 40px;
       width: 120px;
       font-size: large; 
-      color:white;
+      color:black;
       background-color: #23B2EE;
       font-weight: bold;
       border: 3px solid black;
@@ -120,3 +120,4 @@ ol{
     color:black;;
     background-color: #009dff;
   }
+

@@ -3,111 +3,230 @@ function reset()
 {
 window.location.reload();
 }
-
-
+function back_info()
+{
+    document.getElementById("back_data").style.border="none";
+    setTimeout(function(){ document.getElementById("st").src="images/bg1.png"; }, 1000);
+    setTimeout(function(){ document.getElementById("st").src="images/bg2.png"; }, 2200);
+    setTimeout(function(){ document.getElementById("st").src="images/bg3.png"; }, 3400);
+    setTimeout(function(){ document.getElementById("st").src="images/bg4.png"; }, 4600);
+}
 function tree()
+{  if(document.getElementById("refdotblue").style.display === "inline" )
+{   setTimeout(function(){ document.getElementById("alidade_img").src="images/a1.PNG"; }, 400);
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/a2.PNG"; }, 800);    
+    setTimeout(function(){  document.getElementById("blueline1").style.display="inline";}, 800);
+    document.getElementById("arrowimg").disabled=false;
+    document.getElementById("tower").disabled=true;
+    document.getElementById("lamp").disabled=true;
+    
+}
+else if(document.getElementById("refdotred").style.display === 'inline' && document.getElementById("redline1").style.display ==="none")
 {
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/a1.PNG"; }, 400);
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/a2.PNG"; }, 800); 
+    
+    setTimeout(function(){  document.getElementById("redline1").style.display="inline";}, 800);
+    
 
-if(document.getElementById("c").style.display === 'inline')
+}
+
+ else if(document.getElementById("blackline1").style.display === "inline" && document.getElementById("blackline2").style.display === "inline" && document.getElementById("blackline3").style.display === "inline" && document.getElementById("blueline1").style.display === "none" && document.getElementById("refdotblue").style.display === "none")
+                  {
+                      setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+                    
+                 }
+else if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blueline2").style.display === "inline" && document.getElementById("blueline3").style.display === "inline" && document.getElementById("refdotblue").style.display === "none" )
+                 {
+                     setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+                     
+                }
+                else if(document.getElementById("redline1").style.display === "inline" && document.getElementById("redline2").style.display === "inline" && document.getElementById("redline3").style.display === "inline" && document.getElementById("refdotred").style.display === "none" )
+                 {
+                     setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+                     
+                }
+else
 {
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/a1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/a2.png"; }, 800); 
-     setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-115px,-35px)scale(2)rotateY(150deg)"; }, 400);
-    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
-    document.getElementById("lineobj4img").style.display="inline";
-    document.getElementById("arrowimg").style.display="inline";
- setTimeout(() => {  swal('Good job!','Please Click on the red curved arrow to rotate the Plane Table','success') }, 500);
+   setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-75px,-20px)scale(1.5)rotateY(150deg)";}, 400);
+   setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
+   setTimeout(function(){ document.getElementById("blackline1").style.display="inline";}, 800);
+   setTimeout(function(){ document.getElementById("alidade_img").src="images/a1.PNG"; }, 400);
+   setTimeout(function(){ document.getElementById("alidade_img").src="images/a2.PNG"; }, 800);  
+}
+    
+}    
 
-}
-else{
-    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-105px,-20px)scale(2)rotateY(150deg)";}, 400);
-    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
-    setTimeout(function(){    document.getElementById("lineobj1img").style.display="inline";}, 800);
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/a1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/a2.png"; }, 800);    
-  
-}
-}
+
 function lamp()
 {
-   
-    if(document.getElementById("c").style.display === "inline")
+
+    if(document.getElementById("redline1").style.display === "inline" && document.getElementById("redline2").style.display === "inline" && document.getElementById("redline3").style.display === "inline")
+   {
+    document.getElementById("result").style.display="inline";
+   }
+   else if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blackline1").style.display === "none" && document.getElementById("blackline2").style.display === "none" && document.getElementById("blackline3").style.display === "none" && document.getElementById("refdotblue").style.display === "none" )
 {
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/b1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/b2.png"; }, 800);    
-    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-95px,-20px)scale(2)rotateY(80deg)";}, 400);
-    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
-    document.getElementById("lineobj2img").style.display="none";
-    document.getElementById("lineobj5img").style.display="inline";
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/b1.PNG"; }, 400);
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/b2.PNG"; }, 800);    
+    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-65px,-25px)scale(2)rotateY(85deg)";}, 400);
+    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
+    
+    setTimeout(function(){  document.getElementById("blueline3").style.display="inline";}, 800);
 
 }
-else{
+else if(document.getElementById("redline1").style.display === "inline" && document.getElementById("blueline1").style.display === "none" && document.getElementById("blueline2").style.display === "none" && document.getElementById("blueline3").style.display === "none" && document.getElementById("refdotred").style.display === "none" )
+{
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/b1.PNG"; }, 400);
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/b2.PNG"; }, 800); 
+    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-65px,-25px)scale(2)rotateY(85deg)";}, 400);
+    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
     
-    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-85px,-20px)scale(2)rotateY(80deg)";}, 400);
-    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
-    setTimeout(function(){    document.getElementById("lineobj2img").style.display="inline";}, 800);
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/a1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/a2.png"; }, 800);    
+    setTimeout(function(){  document.getElementById("redline3").style.display="inline";}, 800);
 }
+
+ else if(document.getElementById("blackline1").style.display === "inline" && document.getElementById("blackline2").style.display === "inline" && document.getElementById("blackline3").style.display === "inline" && document.getElementById("blueline1").style.display === "none" && document.getElementById("refdotblue").style.display === "none")
+                  {
+                      setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+                     
+                 }
+else if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blueline2").style.display === "inline" && document.getElementById("blueline3").style.display === "inline" && document.getElementById("refdotblue").style.display === "none")
+                 {
+                     setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+                    
+                }
+                else{
+    
+                    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-60px,-25px)scale(2)rotateY(75deg)";}, 400);
+                    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
+                    setTimeout(function(){ document.getElementById("blackline3").style.display="inline";}, 800);
+                    setTimeout(function(){ document.getElementById("alidade_img").src="images/b1.PNG"; }, 400);
+                    setTimeout(function(){ document.getElementById("alidade_img").src="images/b2.PNG"; }, 800);   
+                }
 }
+
 
 function tower()
+{  if(document.getElementById("redline1").style.display === "inline" && document.getElementById("redline2").style.display === "inline" && document.getElementById("redline3").style.display === "inline")
 {
-    
-    if(document.getElementById("c").style.display === "inline")
-{
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/c1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/c2.png"; }, 800);  
-    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-70px,-50px)scale(2)rotateY(-350deg)";}, 400);
-    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);  
-    document.getElementById("lineobj3img").style.display="none";
-    document.getElementById("lineobj6img").style.display="inline";
-
+ document.getElementById("result").style.display="inline";
 }
-else{
-    setTimeout(function(){ document.getElementById("drawobjimg").style.transform="translate(-90px,-50px)scale(2)rotateY(-350deg)";}, 400);
+else
+    if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blackline1").style.display === "none" && document.getElementById("blackline2").style.display === "none" && document.getElementById("blackline3").style.display === "none" && document.getElementById("refdotblue").style.display === "none" )
+{
+    setTimeout(function(){  document.getElementById("alidade_img").src="images/c1.PNG"; }, 400);
+    setTimeout(function(){  document.getElementById("alidade_img").src="images/c2.PNG"; }, 800);  
+    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(-65px,-40px)scale(1.5)rotateY(-20deg)";}, 400);
     setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
-    setTimeout(function(){    document.getElementById("lineobj3img").style.display="inline";}, 800);
-    setTimeout(function(){ document.getElementById("alidade_img").src="img/a1.png"; }, 400);
-    setTimeout(function(){  document.getElementById("alidade_img").src="img/a2.png"; }, 800);    
+    setTimeout(function(){  document.getElementById("blueline2").style.display="inline";}, 800);
+    
+
+}
+else if(document.getElementById("redline1").style.display === "inline" && document.getElementById("blueline1").style.display === "none" && document.getElementById("blueline2").style.display === "none" && document.getElementById("blueline3").style.display === "none" && document.getElementById("refdotred").style.display === "none" )
+{
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/c1.PNG"; }, 400);
+    setTimeout(function(){ document.getElementById("alidade_img").src="images/c2.PNG"; }, 800); 
+    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(-65px,-40px)scale(1.5)rotateY(-20deg)";}, 400);
+    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
+    setTimeout(function(){  document.getElementById("redline2").style.display="inline";}, 800);
+
+}
+
+ else if(document.getElementById("blackline1").style.display === "inline" && document.getElementById("blackline2").style.display === "inline" && document.getElementById("blackline3").style.display === "inline" && document.getElementById("blueline1").style.display === "none" && document.getElementById("refdotblue").style.display === "none")
+ {
+     setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+    
+}
+else if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blueline2").style.display === "inline" && document.getElementById("blueline3").style.display === "inline" && document.getElementById("refdotblue").style.display === "none")
+{
+    setTimeout(() => {  swal("Please Click on C labeled Button placed on tripod to get center point of triangle"); }, 1000);
+   
+}
+else
+{
+    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(-65px,-40px)scale(1.5)rotateY(-20deg)";}, 400);
+    setTimeout(function(){  document.getElementById("drawobjimg").style.transform="translate(0px,0px)"; }, 800);
+    setTimeout(function(){  document.getElementById("blackline2").style.display="inline";}, 800);
+    setTimeout(function(){  document.getElementById("alidade_img").src="images/c1.PNG"; }, 400);
+    setTimeout(function(){  document.getElementById("alidade_img").src="images/c2.PNG"; }, 800);    
 }
 }
 
-const imgs = Array.from(document.querySelectorAll('.scale'));
-        // Add event listener for document:
-        document.addEventListener('click', event => {
-            // Has one of the images been clicked?
-            if (event.target.classList.contains('scale')) {
-                // Add class indicating that is has been clicked:
-                event.target.classList.add('is-clicked');
-                // Check if all images have been clicked:
-                if (!imgs.find(item => !item.classList.contains('is-clicked'))) {
-                    // Make button visible:
-                   
-                   
-                  if(document.getElementById("lineobj1img").style.display === "inline" )
- {setTimeout(() => {  swal('Good job!','Please Click on C labeled Button placed on tripod to get center point of triangle','success') }, 2000);
- 
- document.getElementById("c").style.display='inline';}
- else
- if(document.getElementById("lineobj6img").style.display === "inline" && document.getElementById("lineobj5img").style.display === "inline" && document.getElementById("lineobj4img").style.display === "inline"){
-    setTimeout(() => {  swal('Good job!','Please Click on the Result Button to observe Graph','success') }, 1500);
-    document.getElementById("result").style.display="inline";
- }
-        
-                }
-                                
-            }
-        });
 
 function show(){
-    setTimeout(() => {  swal('Good job!','The center point of triangle is now plotted on the table','success') }, 300);
-    document.getElementById("refdotblue").style.display="inline";
-    
-}       
+    if(document.getElementById("blackline1").style.display === "inline" && document.getElementById("blackline2").style.display === "inline" && document.getElementById("blackline3").style.display === "inline")
+        {
+           
+            setTimeout(() => {swal("The center point (blue) of triangle is now plotted on the table"); }, 500);
+            document.getElementById("refdotblue").style.display="inline";
+           
+        }
+  else  
+  if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blueline2").style.display === "inline" && document.getElementById("blueline3").style.display === "inline")
+  {
+     
+            setTimeout(() => {swal("The center point (red) of triangle is now plotted on the table"); }, 500);
+            document.getElementById("refdotred").style.display="inline";
+            
+  }
+  else
+   {
+        swal("Please draw appropriate lines") ;
+     }
+     }       
+     
 function rotate()
 {
-    document.getElementById("lineobj1img").style.display="none";
-    document.getElementById("lineobj2img").style.display="none";
-    document.getElementById("lineobj3img").style.display="none";
+    if(document.getElementById("blackline1").style.display === "inline" && document.getElementById("blackline2").style.display === "inline" && document.getElementById("blackline3").style.display === "inline" && document.getElementById("blueline1").style.display === "inline" )
+{
+      document.getElementById("blackline1").style.display="none";
+           document.getElementById("blackline2").style.display="none";
+           document.getElementById("blackline3").style.display="none";
+           document.getElementById("refdotblue").style.display="none";
+           document.getElementById("tower").disabled=false;
+           document.getElementById("lamp").disabled=false;
+           swal("Plane table has rotated successfully !!");
+            /*    document.getElementById("sheet").style.transform="perspective(900px)rotateZ(5deg)"; */
+
+
+}
+else 
+if(document.getElementById("blueline1").style.display === "inline" && document.getElementById("blueline2").style.display === "inline" && document.getElementById("blueline3").style.display === "inline" && document.getElementById("redline1").style.display === "inline")
+  {
+    document.getElementById("blueline1").style.display="none";
+    document.getElementById("blueline2").style.display="none";
+           document.getElementById("blueline3").style.display="none";
+           document.getElementById("refdotred").style.display="none";
+           swal("Plane table has rotated successfully !!");
+}
 } 
+
+function in_out()
+{   
+
+    if(document.getElementById("in").style.display === "none" && document.getElementById("out").style.display === "none")
+    {   document.getElementById("in").style.display="inline";
+        document.getElementById("out").style.display="inline";
+        
+    }
+    else
+    {
+        document.getElementById("in").style.display="none";
+        document.getElementById("out").style.display="none";
+
+    }
+
+}
+
+function result(){
+
+    if(document.getElementById("redline1").style.display === "inline" && document.getElementById("redline2").style.display === "inline" && document.getElementById("redline3").style.display === "inline")
+    {
+    location.href = "graph.html";
+    }
+    else{
+
+        swal("Please follow-up instructions first");
+    }
+
+}
