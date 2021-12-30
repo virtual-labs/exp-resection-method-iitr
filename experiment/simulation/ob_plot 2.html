@@ -32,13 +32,12 @@
     <img id="ar22" src="images\ar2.gif">
     <img id="ar32" src="images\ar3.gif">
     </div>
-    <div id="tree1_div"><span id="tree1-obj">Object 1 (Tree 1)</span>
-    <span><img id="tree1" src="images\tree1.png" onclick="tree1()" class="scale2"></span></div>
-    <div id="tree2_div"><span id="tree2-obj">Object 2 (Tree 2)</span>
-    <span><img id="tree2" src="images\tree2.png" onclick="tree2()" class="scale2"></span></div>
-    <div id="lamp2_div"><span id="lamp2-obj">Object 3 (Lamp)</span>
-    <span><img id="lamp2" src="images\lamp.PNG" onclick="lamp2()"  class="scale2"></span></div>
-    </div>
+    <img id="tree1" src="images\tree1.png" onclick="tree1()" class="scale2">
+            <p id="tree_h2">Object 2 (Tree)</p>
+        <img id="tree2" src="images\tree2.png" onclick="tree2()" class="scale2">
+            <p id="tree_h1">Object 1 (Tree)</p>
+    <img id="lamp2" src="images\lamp.PNG" onclick="lamp2()"  class="scale2">
+            <p id="lamp_h2">Object 3 (Lamp)</p>
     
     
 <div id="sheet2">
@@ -210,10 +209,9 @@ function rotate2()
            document.getElementById("lineobj2img2").style.display="none";
            document.getElementById("lineobj3img2").style.display="none";
            document.getElementById("refdotblue2").style.display="none";
-           document.getElementById("tower2").disabled=false;
-           document.getElementById("lamp2").disabled=false;
+          
             swal("Plane table has rotated successfully !!");
-            /*    document.getElementById("sheet").style.transform="perspective(900px)rotateZ(5deg)"; */
+           
 
 }
 else 
@@ -231,6 +229,7 @@ function result2(){
     if(document.getElementById("lineobj7img2").style.display === "inline" && document.getElementById("lineobj8img2").style.display === "inline" && document.getElementById("lineobj9img2").style.display === "inline")
     {
     location.href = "graph2.html";
+
     }
     else{
 
